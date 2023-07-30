@@ -906,15 +906,17 @@ class Todo {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "Sy1n");
-/* harmony import */ var _MyComponents_todos_todos_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MyComponents/todos/todos.component */ "2s5v");
-/* harmony import */ var _MyComponents_todo_item_todo_item_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MyComponents/todo-item/todo-item.component */ "GXMy");
-/* harmony import */ var _MyComponents_add_todo_add_todo_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MyComponents/add-todo/add-todo.component */ "3siR");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var _MyComponents_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./MyComponents/about/about.component */ "58hc");
-/* harmony import */ var _MyComponents_edit_todo_edit_todo_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./MyComponents/edit-todo/edit-todo.component */ "+arX");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _MyComponents_todos_todos_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MyComponents/todos/todos.component */ "2s5v");
+/* harmony import */ var _MyComponents_todo_item_todo_item_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MyComponents/todo-item/todo-item.component */ "GXMy");
+/* harmony import */ var _MyComponents_add_todo_add_todo_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./MyComponents/add-todo/add-todo.component */ "3siR");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _MyComponents_about_about_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./MyComponents/about/about.component */ "58hc");
+/* harmony import */ var _MyComponents_edit_todo_edit_todo_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./MyComponents/edit-todo/edit-todo.component */ "+arX");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 
 
@@ -928,20 +930,20 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ providers: [], imports: [[
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_1__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_1__["HashLocationStrategy"] }], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-        _MyComponents_todos_todos_component__WEBPACK_IMPORTED_MODULE_3__["TodosComponent"],
-        _MyComponents_todo_item_todo_item_component__WEBPACK_IMPORTED_MODULE_4__["TodoItemComponent"],
-        _MyComponents_add_todo_add_todo_component__WEBPACK_IMPORTED_MODULE_5__["AddTodoComponent"],
-        _MyComponents_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"],
-        _MyComponents_edit_todo_edit_todo_component__WEBPACK_IMPORTED_MODULE_8__["EditTodoComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+        _MyComponents_todos_todos_component__WEBPACK_IMPORTED_MODULE_4__["TodosComponent"],
+        _MyComponents_todo_item_todo_item_component__WEBPACK_IMPORTED_MODULE_5__["TodoItemComponent"],
+        _MyComponents_add_todo_add_todo_component__WEBPACK_IMPORTED_MODULE_6__["AddTodoComponent"],
+        _MyComponents_about_about_component__WEBPACK_IMPORTED_MODULE_8__["AboutComponent"],
+        _MyComponents_edit_todo_edit_todo_component__WEBPACK_IMPORTED_MODULE_9__["EditTodoComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"]] }); })();
 
 
 /***/ }),
